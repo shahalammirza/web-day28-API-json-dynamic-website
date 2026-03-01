@@ -7,16 +7,16 @@ let person = {
     money: 15000
 }
 
-console.log(person);
+// console.log(person);
 
 // this object convert into JSON
 // JSON.stringify
 
 const personJson = JSON.stringify(person);
-console.log(personJson, typeof personJson);
+// console.log(personJson, typeof personJson);
 
 // this json string convert to a real object 
 //JSON.parse
 
 const parseJson = JSON.parse(personJson);
-console.log(parseJson, typeof parseJson);
+// console.log(parseJson, typeof parseJson);
