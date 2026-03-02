@@ -4,14 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON</title>
+    <style>
+        #card-container{
+            max-width: 1192px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+        .post-card{
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px gray;
+            border: 1px solid #ddd;
+            height: 100%;
+        }
+        .post-card p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello JSON -- javascript object notation</h1>
 
-    <ul id="post-container"></ul>
-
+    <!-- <ul id="post-container"></ul> -->
     <button onclick="loadData()">load data</button>
     <button onclick="loadPost()">Load Post</button>
+    <h1>ALL POST</h1>
+
+    <div id="card-container">
+        
+    </div>
+
 
     <script src="js/script.js"></script>
     <script src="js/fetch-function.js"></script>
